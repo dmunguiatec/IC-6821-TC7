@@ -6,7 +6,7 @@
     * [Diagrama de contenedores Blog App](#diagrama-de-contenedores-blog-app)
         * Diagramas de componentes
             * [API](#diagrama-de-componentes-api)
-                * [Sync Data Service](#diagrama-de-cdigo-sync-data-service)
+                * [Sync Data Service](#diagrama-de-código-sync-data-service)
                 * User Entities
                 * Blog Post Entities
                 * Blog Post Service
