@@ -51,7 +51,13 @@ modelará en Java con la clase `ExternalPostDTO`. Esta clase implementa el patr�
 utiliza para modelar datos que se transfieren entre sistemas.
 
 La clase `ExternalPostMapper` tiene la responsabilidad de transformar instancias de `ExternalPostDTO` en instancias de 
-`Post`.
+`Post`. 
+
+En nuestra entidad `Post` queremos mantener registro de los identificadores que vienen desde el sistema externo, 
+pero también queremos diferenciarlos de los identificadores que manejaremos internamente a nivel de la base de datos que
+estaremos construyendo más adelante. Por esta razón, en la clase `Post` mapeamos el `id` del DTO a una propiedad 
+llamada `integrationId`, para indicar que es el identificador asociado a la integración con el sistema externo. De igual
+forma `userId` en el DTO se mapea a `userIntegrationId` en `Post`.
 
 Debe implementar las clases:
 
